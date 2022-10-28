@@ -1,14 +1,10 @@
-use my_anemone;
+use my_tomaoli;
 
-DROP TABLE `fasce`;
-DROP TABLE `scarti`;
-DROP TABLE `inventari`;
-DROP TABLE `merci`;
-DROP TABLE `deliveryScontrino`;
-DROP TABLE `scontrini`;
-DROP TABLE `delivery`;
-DROP TABLE `dipendenteLocale`;
-DROP TABLE `locali`;
-DROP TABLE `aree`;
-DROP TABLE `dipendenti`;
-DROP TABLE `temi`;
+DROP TABLE `case`;
+DROP TABLE `personaPossiedeMacchina`;
+DROP TABLE `macchine`;
+DROP TABLE `modelliMacchine`;
+DROP TABLE `utenti`;
+DROP TABLE `persone`;
+DROP TABLE `temi;
+

@@ -1,6 +1,6 @@
 <?php
 return [
-    'dbname' => 'my_anemone',
+    'dbname' => 'my_tomaoli',
     'host' => 'localhost',
     'username' => 'root',
     'password' => ''
