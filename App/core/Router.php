@@ -13,6 +13,7 @@ class Router
     public static function init()
     {
         Router::get('', 'home');
+        Router::get('anagrafe');
     }
 
     private static $routes = [

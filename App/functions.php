@@ -42,3 +42,24 @@ function error($code)
 {
     return partial("errors/$code");
 }
+
+function showTable($color, $table, $fields)
+{ ?>
+    <div class="w3-panel w3-<?= $color ?> w3-card-4 w3-round-large w3-padding">
+        <h2 class="w3-center"><?= $table ?></h2>
+        <table class="w3-table-all w3-white w3-card">
+            <tr>
+                <?php foreach ($fields as $field) : ?>
+                    <th><?= $field ?></th>
+                <?php endforeach ?>
+            </tr>
+            <?php foreach (Database::query("SELECT * FROM $table") as $persona) : ?>
+                <tr>
+                    <?php foreach ($fields as $field) : ?>
+                        <td><?= $persona[$field] ?></td>
+                    <?php endforeach ?>
+                </tr>
+            <?php endforeach ?>
+        </table>
+    </div>
+<?php } 
